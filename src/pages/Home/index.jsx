@@ -118,7 +118,7 @@ const Home = () => {
           <ProductSlider items={5} />
         </div>
       </section>
-      
+
       <section className="bg-white">
         <div className="container">
           <AdsBanner items={4} />
@@ -154,11 +154,8 @@ const Home = () => {
               <InstagramSlider />
             </SwiperSlide>
           </Swiper>
-
-          
         </div>
       </section>
-      
 
       {/* <section className="py-5 pt-4 pb-8 bg-white blogSection">
         <div className="container">
@@ -185,7 +182,6 @@ const Home = () => {
           </Swiper>
         </div>
       </section> */}
- 
 
       {/* <section className="py-6 pt-0 bg-white">
         <div className="container flex flex-col lg:flex-row gap-5">
