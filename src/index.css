@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+/* body, html {
+  cursor: none !important;
+} */
+
 ::-webkit-scrollbar {
   width: 8px !important;
   height: 8px !important;
@@ -143,7 +147,6 @@ body {
   color: #fff !important;
 }
 
-
 .homeCatSlider .item:hover img {
   transform: scale(1.1);
 }
@@ -234,7 +237,6 @@ body {
   background-color: #ff5252 !important;
 }
 
-
 .homeBanner .swiper-slide-active .info {
   right: 0px !important;
   opacity: 1;
@@ -274,4 +276,17 @@ body {
 
 .homeBanner .info .btn_ {
   transition-duration: 3.3s;
+}
+
+.MuiCheckbox-root {
+  padding: 6px !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
+
+.Mui-selected.MuiPaginationItem-page {
+  background: #ff5252 !important;
+  color: #fff !important;
 }
