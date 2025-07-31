@@ -834,6 +834,7 @@ const useFluidCursor = () => {
     render(null);
     requestAnimationFrame(update);
   }
+  
   function calcDeltaTime() {
     let now = Date.now();
     let dt = (now - lastUpdateTime) / 1000;
