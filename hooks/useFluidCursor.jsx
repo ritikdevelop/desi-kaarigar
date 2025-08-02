@@ -834,7 +834,7 @@ const useFluidCursor = () => {
     render(null);
     requestAnimationFrame(update);
   }
-  
+
   function calcDeltaTime() {
     let now = Date.now();
     let dt = (now - lastUpdateTime) / 1000;
@@ -842,6 +842,7 @@ const useFluidCursor = () => {
     lastUpdateTime = now;
     return dt;
   }
+
   function resizeCanvas() {
     let width = scaleByPixelRatio(canvas.clientWidth);
     let height = scaleByPixelRatio(canvas.clientHeight);
@@ -852,6 +853,7 @@ const useFluidCursor = () => {
     }
     return false;
   }
+  
   function updateColors(dt) {
     colorUpdateTimer += dt * config.COLOR_UPDATE_SPEED;
     if (colorUpdateTimer >= 1) {
