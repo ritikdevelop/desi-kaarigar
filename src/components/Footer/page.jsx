@@ -52,7 +52,7 @@ const Footer = () => {
                 Contact us
               </h2>
               <p className="text-[14px] font-[400] pb-4 text-gray-500">
-                Classyshop - ABC, New Delhi
+                ADDRESS
               </p>
               <Link
                 className="link text-gray-500"
