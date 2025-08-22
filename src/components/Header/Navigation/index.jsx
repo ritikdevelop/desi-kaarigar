@@ -6,37 +6,37 @@ import { Link } from "react-router-dom";
 import Divider from "@mui/material/Divider";
 import Categories from "./Categories";
 
-/*************  ✨ Windsurf Command ⭐  *************/
 /**
  * Navigation component renders a navigation bar with several category links.
  * It includes a button to toggle a categories panel and links to various occasions.
- * 
+ *
  * State:
  * - isOpenCategories: Boolean state to manage the visibility of the categories panel.
- * 
+ *
  * Props passed to Categories component:
  * - isOpenCategories: Boolean state to indicate if the categories panel is open.
  * - setIsOpenCategories: Function to update the isOpenCategories state.
- * 
+ *
  * The navigation bar includes links for events like Father's Day, Mother's Day,
  * Occasions, Anniversary, Birthday, Rakhi, Bhai Dooj, and Combos.
  */
 
-/*******  302a65e2-c07c-452b-bc1b-4f83fc84b6c8  *******/
 const Navigation = () => {
-
   const [isOpenCategories, setIsOpenCategories] = useState(false);
 
   const openCategoriesPanel = () => {
     setIsOpenCategories(true);
-  }
+  };
 
   return (
     <>
       <nav className="py-2">
         <div className="container flex items-center justify-start gap-2">
           <div className="col_1 w-[25%]">
-            <Button className="!text-black !font-semibold gap-2 w-full" onClick={openCategoriesPanel}>
+            <Button
+              className="!text-black !font-semibold gap-2 w-full"
+              onClick={openCategoriesPanel}
+            >
               <RiMenu2Fill className="text-[14px]" />
               Shop By Categories
               <FaAngleDown />
@@ -96,7 +96,6 @@ const Navigation = () => {
                 </Link>
               </li>
 
-
               {/* Rakhi Link */}
               <li className="list-none">
                 <Link
@@ -132,8 +131,10 @@ const Navigation = () => {
       </nav>
 
       {/* //TOdo: Categories */}
-      <Categories  isOpenCategories={isOpenCategories}
-      setIsOpenCategories={setIsOpenCategories} />
+      <Categories
+        isOpenCategories={isOpenCategories}
+        setIsOpenCategories={setIsOpenCategories}
+      />
     </>
   );
 };
